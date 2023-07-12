@@ -1,0 +1,136 @@
+field: 095f8057-5d5d-4860-a1f8-3d9d4dbc205e # Video Block
+fieldLayouts:
+  6f7625ea-3f10-4560-8aca-32438ebe4f08:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 0f4f54d7-8239-48b0-b549-6a658b676dd3 # Video
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1398c447-9aa7-45eb-a7f3-322c358fbd2c
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 36b819fd-a822-4e60-af08-6e9502b19664 # Preload Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 24c61b81-74a8-49c8-8904-bec28986a6f1
+            userCondition: null
+            warning: null
+            width: 50
+        name: Content
+        uid: a647e415-a8d4-41be-955b-d3514ea2a48b
+        userCondition: null
+fields:
+  0f4f54d7-8239-48b0-b549-6a658b676dd3: # Video
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: video
+    instructions: null
+    name: Video
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds: null
+      branchLimit: null
+      defaultUploadLocationSource: 'volume:9f9aa25f-e3b9-4164-8bef-99d3aec3c774' # Uploads
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: 1
+      minRelations: null
+      previewMode: full
+      restrictFiles: false
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:9f9aa25f-e3b9-4164-8bef-99d3aec3c774' # Uploads
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: null
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      sources:
+        - 'volume:9f9aa25f-e3b9-4164-8bef-99d3aec3c774' # Uploads
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  36b819fd-a822-4e60-af08-6e9502b19664: # Preload Image
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: preloadImage
+    instructions: null
+    name: 'Preload Image'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds: null
+      branchLimit: null
+      defaultUploadLocationSource: 'volume:9f9aa25f-e3b9-4164-8bef-99d3aec3c774' # Uploads
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: 1
+      minRelations: null
+      previewMode: full
+      restrictFiles: false
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:9f9aa25f-e3b9-4164-8bef-99d3aec3c774' # Uploads
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: null
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      sources:
+        - 'volume:9f9aa25f-e3b9-4164-8bef-99d3aec3c774' # Uploads
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+handle: block
+name: Block
+sortOrder: 1

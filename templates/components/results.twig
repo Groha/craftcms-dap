@@ -1,0 +1,47 @@
+<section class="max-w-[108rem] mx-auto pt-40 md:pt-78 overflow-hidden">
+    <div class="ads-container px-20 flex flex-col lg:flex-row justify-between mb-60">
+        <div class="max-w-[40rem] pl-40 relative before:block before:w-10 before:h-[calc(100%-20px)] before:bg-red before:absolute before:left-0 before:top-13">
+          <h2 class="h2">{{ entry.resultsTitle }}</h2>
+          <p class="text">{{ entry.resultsSubtitle }}</p>
+        </div>
+        <a href="#ads-hero" class="flex w-fit bg-black rounded-[0.188rem] hover:bg-opacity-80 transition-colors h-fit self-end mt-30 lg:mt-0 mx-auto md:mx-0">
+          <span class="py-20 px-40 uppercase p-10 font-Roboto-Medium text-[1.25rem] leading-none text-white">
+            {{ entry.resultsButtonText }}
+          </span>
+          <span class="p-20 flex justify-center items-center border-l border-white">
+            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M19.0598 9.59547C19.7513 9.97523 19.7513 10.9687 19.0598 11.3485L2.47001 20.4595C1.80357 20.8255 0.988629 20.3433 0.988629 19.583L0.98863 1.361C0.98863 0.600675 1.80357 0.118486 2.47001 0.48449L19.0598 9.59547Z"
+                    fill="white"
+                />
+            </svg>
+          </span>
+        </a>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-22 mb-50">
+
+      {% for item in entry.resultsCard.all() %}
+
+        {% set productImg = item.productImage.one() %}
+        {% set bgImg = item.bgImage.one() %}
+        
+        <div>
+            <div class="mb-22 relative">
+                <picture>
+                  <img src="{{ productImg.url }}" alt="{{ productImg.title }}" class="w-full h-full object-cover" />
+                </picture>
+                <div class="absolute right-15 lg:right-12 3xl:right-15 bottom-15 lg:bottom-12 3xl:bottom-15 z-[5] lg:w-[167px] 3xl:w-[unset] trapezoid prew" style="clip-path: polygon(100% 0, 0 100%, 100% 100%);">
+                    <picture>
+                      <img src="{{ bgImg.url }}" alt="{{ bgImg.title }}" />
+                    </picture>
+                </div>
+                <div class="triangle absolute bottom-0 right-0"></div>
+            </div>
+            <p class="title text-center">{{ item.cardTitle }}</p>
+            <p class="text text-center">{{ item.cardSubtitle }}</p>
+        </div>
+
+      {% endfor %}
+
+    </div>
+</section>

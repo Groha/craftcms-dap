@@ -1,0 +1,385 @@
+fieldLayouts:
+  fdee8ac7-0628-4c22-b36e-a81ffac6388c:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 18239b22-5f5b-42ae-87f0-587aa4fb9b6c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 14f81cef-af43-4851-aba9-6d8e59c18be9 # Hero Left Content
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 31d058df-e459-4b0b-9939-92ae92b2715e
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Hero Left'
+        uid: 81e137cd-b34f-405b-ae65-2bbb0c24f98e
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 6f13e6ec-b3c6-443f-b38c-233885101b8b # Hero Right Content
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1d0c5e10-4d31-4aaa-ac23-90c24ea298b0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d3573591-9a1e-4248-95a4-ddb3d6b816fa # Button With List
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6b5df993-4930-4593-ae2e-197fc04269cb
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 28a4eafa-ba34-421b-a652-2be50d89d1b5 # Hero Button
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: cd35c0b3-fdd7-4de8-b79f-f8939e4581c6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: bfcadc74-b10c-4783-90f1-83ebc4141bdb # Hero Footnote
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7d3f56a5-6e38-49f9-8d42-3b0e42912891
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Hero Right'
+        uid: 4a7ba5df-6357-4f8b-8dc5-c4768919337c
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 095f8057-5d5d-4860-a1f8-3d9d4dbc205e # Video Block
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 19698367-a17a-4049-8f3f-5da46ba2734d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d2d0d654-161f-48b1-ab4c-bb2dce41caf0 # Video List Block
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6417bceb-af6f-4275-bc25-a11002d79f8c
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Video Block'
+        uid: dacd51c0-6252-4ce4-a007-06e25a356872
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: ab0a6129-301f-4151-88ea-d9c8531b7146 # How It Works Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6305da92-7b4f-4645-9302-bc7540334cab
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 0321da59-90fa-4cb7-81e4-5b046a36b181 # How It Works Subtitle
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 72aa7fac-202d-491f-97ef-c3c831e63cdc
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: bf945f91-4b64-42f3-975c-0317bc00f4ca # How It Works
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4f66881c-2076-4116-a0d1-72d5b6290e5e
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'How It Works'
+        uid: 80a04fea-0c83-4890-b733-cadec9fe057e
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: fc2f5641-426e-4ef2-95cb-28ec28b2d880 # Texture Block
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6cb9152a-8430-4eab-9442-2941fdc90cf9
+            userCondition: null
+            warning: null
+            width: 100
+        name: Texture
+        uid: 362b5da7-a021-4d59-84d9-f5f76f316f60
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 35721934-73a5-49eb-8f94-a1008d013686 # Results Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4ce78926-546e-441e-b230-46d7ad02a0dc
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 0138b3d8-aa60-4f20-875a-11cbbbaadfcc # Results Subtitle
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 89fe126d-0387-48b7-8e36-a9f255fbe333
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e23d828f-c350-45ab-a72d-9f699da9cad6 # Results Button Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b187a55b-fcae-4374-afc1-637867cf52bf
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 3f20b0a0-8c68-4e32-b60f-d03a20023d33 # Results Card
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a300a494-2c83-4767-83a2-aed88b854496
+            userCondition: null
+            warning: null
+            width: 100
+        name: Results
+        uid: eae5daa6-33f0-4868-b37a-a5f4332102b1
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: dcac4a40-1a0c-4887-9362-ea657ee8aa27 # Reviews Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2545d8bb-8675-4a7d-90e2-fbe577bd63af
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: ab988ae2-4fa9-4430-a94f-b6abdb03fb47 # Reviews 
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 778c803d-3219-47bf-9c0f-896e21705ece
+            userCondition: null
+            warning: null
+            width: 100
+        name: Reviews
+        uid: 804fe284-3339-4cc4-bf3b-d22dd970a4e3
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 66073d3b-8dd3-4914-8ea2-65305b8522f5 # Where To Buy Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6cac4e85-ce14-4c46-ba8c-3092e26c439e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 0850d1bc-7b20-4f2b-82eb-4f90f0ba48a1 # Where To Buy Cards
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 82697f9a-72a4-46a7-b7b0-da63334762c8
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Where To Buy'
+        uid: 8abac387-daa7-41ef-a374-37a59eea8185
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: ac0f2114-28aa-47e3-b746-79a48afb24d8 # Tips Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b620b774-5094-49ff-8c05-5efd062355cc
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 09bb940a-c177-4e1b-bf3d-594faa1db71c # Tips Lists
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b6c2a47e-4b8f-49d8-ba01-f01ebd2ddbf8
+            userCondition: null
+            warning: null
+            width: 100
+        name: Tips
+        uid: 96d03c37-776a-48eb-b67e-37aea0566be5
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 6e6d865d-3b10-4884-b333-0c7f158f01b6 # CTA Images
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ae52f1ee-1b29-44ed-8b33-328ef6abbb54
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 30bbf02d-7c34-48c1-90f1-c9a92561693d # CTA Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 477f5b76-3669-4cc8-aa81-c3c716a99740
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 88b80e95-ab98-4b02-804d-8954b4b2a162 # CTA Button With List
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 97f195f9-b5af-4e6f-a6ee-cd024e6426ac
+            userCondition: null
+            warning: null
+            width: 100
+        name: CTA
+        uid: ef2ecfcf-63f4-4da3-9265-9ec9c0023a30
+        userCondition: null
+handle: home
+hasTitleField: false
+name: Home
+section: fdd8054c-2467-4f52-bee3-ac1d6de18b04 # Home
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

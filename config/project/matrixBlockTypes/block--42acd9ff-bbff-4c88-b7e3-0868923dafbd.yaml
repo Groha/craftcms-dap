@@ -1,0 +1,115 @@
+field: fc2f5641-426e-4ef2-95cb-28ec28b2d880 # Texture Block
+fieldLayouts:
+  7f5946b0-9cbe-4f39-834c-6dcb0e806b1c:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: aa201764-933e-4afd-8032-0daa8a85b713 # Block Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5effe6c1-577d-45ee-9b9c-c57578d0a530
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: efd6fc60-f7e5-4647-acf7-644a82a8ca18 # Block Body
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 33eda109-a8e9-4829-a25c-cf2cd1ab16ff
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 142b5826-b891-4fe1-9d84-3a469c2e7927
+        userCondition: null
+fields:
+  aa201764-933e-4afd-8032-0daa8a85b713: # Block Title
+    columnSuffix: jfslnumh
+    contentColumnType: string
+    fieldGroup: null
+    handle: blockTitle
+    instructions: null
+    name: 'Block Title'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds: null
+      branchLimit: null
+      defaultUploadLocationSource: 'volume:9f9aa25f-e3b9-4164-8bef-99d3aec3c774' # Uploads
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: 1
+      minRelations: null
+      previewMode: full
+      restrictFiles: false
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:9f9aa25f-e3b9-4164-8bef-99d3aec3c774' # Uploads
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: null
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      sources:
+        - 'volume:9f9aa25f-e3b9-4164-8bef-99d3aec3c774' # Uploads
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  efd6fc60-f7e5-4647-acf7-644a82a8ca18: # Block Body
+    columnSuffix: htfknufg
+    contentColumnType: text
+    fieldGroup: null
+    handle: blockBody
+    instructions: null
+    name: 'Block Body'
+    searchable: false
+    settings:
+      availableTransforms: ''
+      availableVolumes: '*'
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: null
+      purifyHtml: true
+      redactorConfig: null
+      removeEmptyTags: false
+      removeInlineStyles: false
+      removeNbsp: false
+      showHtmlButtonForNonAdmins: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+handle: block
+name: Block
+sortOrder: 1

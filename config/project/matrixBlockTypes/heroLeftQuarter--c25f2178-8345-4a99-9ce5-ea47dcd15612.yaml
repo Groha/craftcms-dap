@@ -1,0 +1,262 @@
+field: 14f81cef-af43-4851-aba9-6d8e59c18be9 # Hero Left Content
+fieldLayouts:
+  5b07eb6a-c61f-495e-88ec-77c6a7174ad7:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 70b900a3-b163-4f64-ba8e-54df83ba01bc # Background Image
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b2c1ea75-88b1-4876-bce7-4a4a66485415
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 1b9e868b-ae4c-4349-9c4d-7677aa7c30f5 # Product Image
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: baac749a-a022-4c20-8730-43356870e475
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 74aa5826-23c0-4cfe-9932-0805df41d5c4 # Title Image
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c610469a-19cf-432c-8f87-165513bcf377
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 049affbf-689f-4798-930e-117b3c8b0f58 # Star Numbers
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 38f62dc8-779d-46a2-974b-f75670166f54
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: a891c4bd-ecba-4ebb-859f-ad7f5217636e # Title Subtext
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 08c55c78-6074-4f55-9024-a7001db0c6d7
+            userCondition: null
+            warning: null
+            width: 25
+        name: Content
+        uid: 1c4206e1-f4be-44c6-b1bb-f50843db0aab
+        userCondition: null
+fields:
+  1b9e868b-ae4c-4349-9c4d-7677aa7c30f5: # Product Image
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: productImage
+    instructions: null
+    name: 'Product Image'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds: null
+      branchLimit: null
+      defaultUploadLocationSource: 'volume:9f9aa25f-e3b9-4164-8bef-99d3aec3c774' # Uploads
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: 1
+      minRelations: null
+      previewMode: full
+      restrictFiles: false
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:9f9aa25f-e3b9-4164-8bef-99d3aec3c774' # Uploads
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: null
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      sources:
+        - 'volume:9f9aa25f-e3b9-4164-8bef-99d3aec3c774' # Uploads
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  049affbf-689f-4798-930e-117b3c8b0f58: # Star Numbers
+    columnSuffix: hgnmarsz
+    contentColumnType: smallint(1)
+    fieldGroup: null
+    handle: starNumbers
+    instructions: null
+    name: 'Star Numbers'
+    searchable: false
+    settings:
+      decimals: 0
+      defaultValue: 4
+      max: 5
+      min: 0
+      prefix: null
+      previewCurrency: null
+      previewFormat: none
+      size: null
+      suffix: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Number
+  70b900a3-b163-4f64-ba8e-54df83ba01bc: # Background Image
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: backgroundImage
+    instructions: null
+    name: 'Background Image'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds: null
+      branchLimit: null
+      defaultUploadLocationSource: 'volume:9f9aa25f-e3b9-4164-8bef-99d3aec3c774' # Uploads
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: 1
+      minRelations: null
+      previewMode: full
+      restrictFiles: false
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:9f9aa25f-e3b9-4164-8bef-99d3aec3c774' # Uploads
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: null
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      sources:
+        - 'volume:9f9aa25f-e3b9-4164-8bef-99d3aec3c774' # Uploads
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  74aa5826-23c0-4cfe-9932-0805df41d5c4: # Title Image
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: titleImage
+    instructions: null
+    name: 'Title Image'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds: null
+      branchLimit: null
+      defaultUploadLocationSource: 'volume:9f9aa25f-e3b9-4164-8bef-99d3aec3c774' # Uploads
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: 1
+      minRelations: null
+      previewMode: full
+      restrictFiles: false
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:9f9aa25f-e3b9-4164-8bef-99d3aec3c774' # Uploads
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: null
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      sources:
+        - 'volume:9f9aa25f-e3b9-4164-8bef-99d3aec3c774' # Uploads
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  a891c4bd-ecba-4ebb-859f-ad7f5217636e: # Title Subtext
+    columnSuffix: befeepzk
+    contentColumnType: text
+    fieldGroup: null
+    handle: titleSubtext
+    instructions: null
+    name: 'Title Subtext'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: heroLeftQuarter
+name: 'Hero Left Quarter'
+sortOrder: 1

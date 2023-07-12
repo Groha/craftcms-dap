@@ -1,0 +1,62 @@
+<section id="ads-reviews" class="border-b-[0.5px] border-black overflow-hidden">
+    <div class="ads-container px-55">
+      <h2 class="h2 text-center py-40 md:pt-95 md:pb-55">{{ entry.resultsTitle }}</h2>
+    </div>
+
+    {% for review in entry.reviews.all() %}
+      
+      <div class="{{ loop.index is odd ? 'bg-gray-4' }}">
+        <div class="ads-container py-22 px-55 flex gap-x-85 items-center flex-wrap md:flex-nowrap gap-y-30">
+            <div>
+                <span class="flex items-center justify-center text-[3.75rem] leading-none">
+                    {{ review.grade }}
+                    <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-19 h-19 ml-4">
+                        <path d="M11.75 0.437012L14.388 8.55606H22.9249L16.0184 13.5739L18.6565 21.693L11.75 16.6751L4.84352 21.693L7.48156 13.5739L0.575086 8.55606H9.11196L11.75 0.437012Z" fill="#070707" />
+                    </svg>
+                </span>
+                <div class="flex mb-10">
+
+                  {% set rating = review.grade %}
+                  {% set maxRating = 5 %}
+
+                  {% for i in 1..maxRating %}
+                    {% if i <= rating %}
+                      <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-19 h-19">
+                        <path d="M11.75 0.437012L14.388 8.55606H22.9249L16.0184 13.5739L18.6565 21.693L11.75 16.6751L4.84352 21.693L7.48156 13.5739L0.575086 8.55606H9.11196L11.75 0.437012Z" fill="#EE4021" />
+                      </svg>
+                    {% else %}
+                      <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-19 h-19">
+                        <path
+                          d="M9.99997 1.30902L11.8951 7.14159L11.9512 7.31434H12.1329H18.2656L13.3041 10.9191L13.1572 11.0258L13.2133 11.1986L15.1084 17.0312L10.1469 13.4264L9.99997 13.3197L9.85302 13.4264L4.89154 17.0312L6.78666 11.1986L6.84278 11.0258L6.69584 10.9191L1.73435 7.31434H7.86709H8.04872L8.10485 7.14159L9.99997 1.30902Z"
+                          fill="#D9D9D9"
+                          stroke="#A0A0A0"
+                          stroke-width="0.5"
+                        />
+                      </svg>
+                    {% endif %}
+                  {% endfor %}
+                  
+                </div>
+                <a href="{{ review.buttonLink }}" class="text-[0.875rem] leading-[114%] uppercase text-center underline inline-block">
+                  {{ review.buttonText }}
+                </a>
+            </div>
+
+            {% set productImg = review.productImg.one() %}
+
+            <div class="flex-shrink-0">
+                <picture>
+                  <img src="{{ productImg.url }}" alt="{{ productImg.title }}" class="w-42 h-[10.188rem] object-contain" />
+                </picture>
+            </div>
+            <div class="flex flex-col justify-center">
+                <h5 class="text-[0.875rem] leading-[114%] font-Roboto-Bold uppercase mb-15">{{ review.productName }}</h5>
+                <p class="text-[1.25rem] leading-[130%] mb-20">{{ review.productReview }}</p>
+                <span class="text-[0.875rem] leading-[114%] font-Roboto-Bold uppercase">– {{ review.author }}</span>
+            </div>
+        </div>
+      </div>
+
+    {% endfor %}
+
+</section>

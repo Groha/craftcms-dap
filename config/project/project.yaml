@@ -1,0 +1,154 @@
+dateModified: 1689180230
+email:
+  fromEmail: k.groholskaya@gmail.com
+  fromName: DAP
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  assetBase:
+    hasUrls: true
+    name: 'Asset Base'
+    settings:
+      path: $ASSET_BASE_PATH
+    type: craft\fs\Local
+    url: $ASSET_BASE_URL
+meta:
+  __names__:
+    0a1b2fec-a38f-4792-84ed-4cce2b2d6002: 'Bg Image' # Bg Image
+    0bf35348-3562-496c-8d68-0678ad62ad8b: 'Product Image' # Product Image
+    0c4ba1b6-7a32-4e6e-b297-73be6cd5a712: 'Hero Logos' # Hero Logos
+    00f2b784-a146-4c2d-9d63-fe78d88ee06c: 'Not Available' # Not Available
+    0f4f54d7-8239-48b0-b549-6a658b676dd3: Video # Video
+    1b9e868b-ae4c-4349-9c4d-7677aa7c30f5: 'Product Image' # Product Image
+    1cb33589-c021-4184-8b3d-a7d14847b35f: 'Home page' # Home page
+    1ff1e47f-09fa-4190-947b-2dd053df3d39: 'Button Text Second' # Button Text Second
+    2f09ec1e-6c3f-4d8d-ad83-edc5e0dadec7: 'List Item' # List Item
+    3b07f6bf-6cda-4ab7-b1f2-8b4a804f40ad: 'Button List' # Button List
+    3f20b0a0-8c68-4e32-b60f-d03a20023d33: 'Results Card' # Results Card
+    4af2d924-0d6a-44cb-bfee-b322e82affde: Block # Block
+    4da2daf7-d326-4905-ab11-6284e46b3e98: 'Button Link' # Button Link
+    5b1223b7-2a14-4722-9e49-31250956edb4: 'Hero Title' # Hero Title
+    6a8b5878-f114-499a-911b-fb8bafbf921c: Logo # Logo
+    06c5a8ad-dc02-49bd-b20b-fc87c40dd489: 'List Title' # List Title
+    06cac6bf-1516-464c-aa72-075c7a4f822e: Author # Author
+    6e6d865d-3b10-4884-b333-0c7f158f01b6: 'CTA Images' # CTA Images
+    6f13e6ec-b3c6-443f-b38c-233885101b8b: 'Hero Right Content' # Hero Right Content
+    7f6ef363-13aa-47f1-8df7-702b335fc7c7: 'Card Image' # Card Image
+    7fcded9e-cfed-4a5c-ac30-ca696aca9858: 'Card Subtitle' # Card Subtitle
+    8e616191-b27c-4b33-b61c-686250355dae: 'Button Text' # Button Text
+    8f6f0e4f-1f3a-4506-8093-6bc04b0fb004: 'Title Subtext' # Title Subtext
+    9a24ea0e-8092-466a-9617-eebf823aaa56: Footer # Footer
+    09bb940a-c177-4e1b-bf3d-594faa1db71c: 'Tips Lists' # Tips Lists
+    9cea8658-ffa6-408f-9e92-c63879c28c05: 'Card Title' # Card Title
+    9e3eb318-60e7-40cf-9bd7-f01e5e79b6ed: 'Button Text' # Button Text
+    9f9aa25f-e3b9-4164-8bef-99d3aec3c774: Uploads # Uploads
+    14f81cef-af43-4851-aba9-6d8e59c18be9: 'Hero Left Content' # Hero Left Content
+    28a4eafa-ba34-421b-a652-2be50d89d1b5: 'Hero Button' # Hero Button
+    29a01358-55dd-4dce-b12d-2d544f323245: DAP # DAP
+    30bbf02d-7c34-48c1-90f1-c9a92561693d: 'CTA Title' # CTA Title
+    35cafe66-1d9a-4b4b-afce-f51bde67ace7: 'Nav Links' # Nav Links
+    36b819fd-a822-4e60-af08-6e9502b19664: 'Preload Image' # Preload Image
+    41b11d35-3dbb-41bb-b9c5-37b8832ac167: 'Product Review' # Product Review
+    42acd9ff-bbff-4c88-b7e3-0868923dafbd: Block # Block
+    46b79096-ad3b-4ec8-942a-159e814e65df: 'Button Target' # Button Target
+    049affbf-689f-4798-930e-117b3c8b0f58: 'Star Numbers' # Star Numbers
+    54ac0f6b-1393-40ff-9118-f996a45f6e72: 'First Button Text' # First Button Text
+    55ae5da3-d781-4f2f-95eb-54a0ea7426bc: 'Button Items' # Button Items
+    60f00b57-0747-45f1-82df-26e91563e4a3: Header # Header
+    67ab1dc1-adf6-4868-9b8e-f776343ecbde: 'Hero Right Block' # Hero Right Block
+    69c9800c-8b57-48e1-a255-cec4201d9e37: 'Button Text' # Button Text
+    70b900a3-b163-4f64-ba8e-54df83ba01bc: 'Background Image' # Background Image
+    72ff4dc4-33cd-4ae6-a39d-37c1296a082e: 'Hero Subtitle' # Hero Subtitle
+    74aa5826-23c0-4cfe-9932-0805df41d5c4: 'Title Image' # Title Image
+    81c72960-efbe-4589-806e-2dc615331bbc: 'Left List' # Left List
+    82a79d66-3865-4afa-b53f-8f38c00c62e7: 'Button Link First' # Button Link First
+    88b80e95-ab98-4b02-804d-8954b4b2a162: 'CTA Button With List' # CTA Button With List
+    91a58dda-a280-4b4e-b5e6-685e848b9995: 'Button Link Second' # Button Link Second
+    93fef0cb-974d-48bd-9eb7-26ae4f0507dc: 'Button Text First' # Button Text First
+    94f06e67-ce06-45c1-8c0e-e8805e5195f6: 'Button Link' # Button Link
+    95d2cdf6-b028-4136-ae7c-f45d384bc3d5: 'Video List Block' # Video List Block
+    095f8057-5d5d-4860-a1f8-3d9d4dbc205e: 'Video Block' # Video Block
+    0138b3d8-aa60-4f20-875a-11cbbbaadfcc: 'Results Subtitle' # Results Subtitle
+    0321da59-90fa-4cb7-81e4-5b046a36b181: 'How It Works Subtitle' # How It Works Subtitle
+    367b99fc-8847-4a01-9298-f48dffbeed2c: 'Button Text' # Button Text
+    449f3fa0-10e6-458e-a96f-a314e1d9adf4: 'Button Text' # Button Text
+    608b4dcd-9f14-440c-8789-3c16b5dcd1a8: 'Button Link' # Button Link
+    653a33ad-674a-47c4-a1ea-4cbb9b40602c: 'Hero Title' # Hero Title
+    766ea833-821f-435f-a291-03609b9017ff: Review # Review
+    800a27e4-b80a-4f9a-bf9b-6201e3ff29cd: 'Hero Footnote' # Hero Footnote
+    842e16ec-16bc-4574-96ee-3e1a808c7908: 'Button Text' # Button Text
+    0850d1bc-7b20-4f2b-82eb-4f90f0ba48a1: 'Where To Buy Cards' # Where To Buy Cards
+    978e0a8e-d819-4c32-99e2-c7b1b4792b8e: 'Card Title' # Card Title
+    03714fab-501a-4836-8b21-d3a56b7c6f22: 'Right List' # Right List
+    4029b062-41a8-4a89-843d-02c1d5441811: Range # Range
+    4092ca72-5467-4c1d-bdd2-5c2ec2075e20: 'Hero Subtitle' # Hero Subtitle
+    7720b900-4be6-43e3-9721-8037bbf0dcf7: Card # Card
+    8927f746-2885-432f-9f90-cb1c5eb8d630: 'List Items' # List Items
+    37578e20-f1c1-42a5-83c8-69ac48a68bfe: 'Button Text' # Button Text
+    56097c76-0c3f-4203-9832-fb1252a7eeaf: Stars # Stars
+    66073d3b-8dd3-4914-8ea2-65305b8522f5: 'Where To Buy Title' # Where To Buy Title
+    67100f6b-4faf-490a-9f19-567b41acb6af: 'Button List' # Button List
+    83205f88-2086-41af-b674-d22765ea8b8f: Buttons # Buttons
+    95241da4-625a-4384-b82a-86ce8be84268: 'Button Subtext First' # Button Subtext First
+    459972b2-8a11-4295-a47d-17a013173d3c: 'Button List' # Button List
+    3434491c-842d-429e-a8b3-fba8f1b0a691: DAP # DAP
+    4854600e-5a98-478c-9323-3f40824be700: 'Hero Logo' # Hero Logo
+    8542108c-84c6-4839-ba46-8ad81f0ddac5: 'Button Items' # Button Items
+    23399366-ee85-4f0f-82c3-6ad977cbc853: Button # Button
+    35721934-73a5-49eb-8f94-a1008d013686: 'Results Title' # Results Title
+    a2daf137-36b5-4a92-af5f-0f2556a18237: 'CTA Title' # CTA Title
+    a5ba0c83-67d7-4556-9f85-d6589d63655b: Card # Card
+    a891c4bd-ecba-4ebb-859f-ad7f5217636e: 'Title Subtext' # Title Subtext
+    aa201764-933e-4afd-8032-0daa8a85b713: 'Block Title' # Block Title
+    ab0a6129-301f-4151-88ea-d9c8531b7146: 'How It Works Title' # How It Works Title
+    ab988ae2-4fa9-4430-a94f-b6abdb03fb47: 'Reviews ' # Reviews 
+    ac0f2114-28aa-47e3-b746-79a48afb24d8: 'Tips Title' # Tips Title
+    ad744c8e-1b3b-4cd0-9163-4d7680865a35: 'Product Image' # Product Image
+    aff50625-677e-4741-9e30-44cf3cec029e: 'Button Text' # Button Text
+    affeed28-0ba1-487f-98e5-ec0e522b698e: Lists # Lists
+    b7c33018-51ea-444d-9091-200074ba4fb0: 'Button With List' # Button With List
+    b364056e-da9f-417e-9f54-22d874607fb7: Common # Common
+    bd00296b-88f3-4a66-9de9-0436fc2faa8d: 'Background Image' # Background Image
+    bd45d741-5caf-4742-a1aa-3d0041b130de: Image # Image
+    bd430198-a5ad-4c10-a6f4-60acc5a43831: 'List Title' # List Title
+    be3c2f99-80a1-4abb-ba87-7a0b9c4028a3: Grade # Grade
+    bf945f91-4b64-42f3-975c-0317bc00f4ca: 'How It Works' # How It Works
+    bfa1b343-b24f-42df-a191-176e3d8f8e0f: Card # Card
+    bfcadc74-b10c-4783-90f1-83ebc4141bdb: 'Hero Footnote' # Hero Footnote
+    c8ebc3cc-b7de-40bc-804c-33badd480ba6: 'Product Img' # Product Img
+    c25f2178-8345-4a99-9ce5-ea47dcd15612: 'Hero Left Quarter' # Hero Left Quarter
+    c710f414-8a19-4b75-a9c6-462c5ebadbd4: 'Star Numbers' # Star Numbers
+    d2d0d654-161f-48b1-ab4c-bb2dce41caf0: 'Video List Block' # Video List Block
+    d60ef91c-7e4a-41f4-a399-90dceee5ee77: 'Product Images' # Product Images
+    d339c5b4-c3f1-4db8-82f6-1ecdbd62eea8: 'Title Image' # Title Image
+    d7624f55-7d29-4f41-9e64-9e8e958a4b1a: 'Card Title' # Card Title
+    d3573591-9a1e-4248-95a4-ddb3d6b816fa: 'Button With List' # Button With List
+    da57cea5-89b0-465d-97d3-a828a176bde1: 'Hero Footnote' # Hero Footnote
+    dcac4a40-1a0c-4887-9362-ea657ee8aa27: 'Reviews Title' # Reviews Title
+    dd1d46e5-50af-46d6-ab09-cd02cf7e9e17: 'Button List' # Button List
+    e00a74af-bba5-4ded-b1c6-f832b380aa61: 'Button With List' # Button With List
+    e7b29439-d9b6-49b5-a061-7b8133633f3f: 'Rich Text' # Rich Text
+    e23d828f-c350-45ab-a72d-9f699da9cad6: 'Results Button Text' # Results Button Text
+    eb01c3b6-9167-4b17-94f1-529adbdca2ca: 'Product Name' # Product Name
+    efd6fc60-f7e5-4647-acf7-644a82a8ca18: 'Block Body' # Block Body
+    f1f8646a-5cd7-4395-a8ec-8ca3a3047983: Home # Home
+    fc2f5641-426e-4ef2-95cb-28ec28b2d880: 'Texture Block' # Texture Block
+    fd8a4290-04bb-4ebb-93b3-e56a104c21ea: 'Hero Logo' # Hero Logo
+    fdd8054c-2467-4f52-bee3-ac1d6de18b04: Home # Home
+    fe733551-d875-43bc-9f5a-8106c1027d2f: 'Product Image' # Product Image
+plugins:
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+system:
+  edition: solo
+  live: true
+  name: DAP
+  schemaVersion: 4.4.0.4
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

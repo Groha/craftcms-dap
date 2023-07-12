@@ -1,0 +1,200 @@
+field: 3f20b0a0-8c68-4e32-b60f-d03a20023d33 # Results Card
+fieldLayouts:
+  d4e5f976-f7a2-4362-8aa9-f3e8b94efa53:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 0bf35348-3562-496c-8d68-0678ad62ad8b # Product Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 56b0fd9c-4309-460f-bc03-762c82052fca
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 0a1b2fec-a38f-4792-84ed-4cce2b2d6002 # Bg Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: acfb85dd-b7c5-4d66-ba6f-4501337a265f
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 9cea8658-ffa6-408f-9e92-c63879c28c05 # Card Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d3e2f5c3-b648-4b33-bf00-b006b371669f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 7fcded9e-cfed-4a5c-ac30-ca696aca9858 # Card Subtitle
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 513c4597-fa05-4a5e-88a3-34b4c2bf9787
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: f0cbaefd-3e37-44f1-b260-a8aae8e930e9
+        userCondition: null
+fields:
+  0a1b2fec-a38f-4792-84ed-4cce2b2d6002: # Bg Image
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: bgImage
+    instructions: null
+    name: 'Bg Image'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds: null
+      branchLimit: null
+      defaultUploadLocationSource: 'volume:9f9aa25f-e3b9-4164-8bef-99d3aec3c774' # Uploads
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: null
+      minRelations: null
+      previewMode: full
+      restrictFiles: false
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:9f9aa25f-e3b9-4164-8bef-99d3aec3c774' # Uploads
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: null
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      sources:
+        - 'volume:9f9aa25f-e3b9-4164-8bef-99d3aec3c774' # Uploads
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  0bf35348-3562-496c-8d68-0678ad62ad8b: # Product Image
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: productImage
+    instructions: null
+    name: 'Product Image'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds: null
+      branchLimit: null
+      defaultUploadLocationSource: 'volume:9f9aa25f-e3b9-4164-8bef-99d3aec3c774' # Uploads
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: null
+      minRelations: null
+      previewMode: full
+      restrictFiles: false
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:9f9aa25f-e3b9-4164-8bef-99d3aec3c774' # Uploads
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: null
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      sources:
+        - 'volume:9f9aa25f-e3b9-4164-8bef-99d3aec3c774' # Uploads
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  7fcded9e-cfed-4a5c-ac30-ca696aca9858: # Card Subtitle
+    columnSuffix: jpabsxsb
+    contentColumnType: text
+    fieldGroup: null
+    handle: cardSubtitle
+    instructions: null
+    name: 'Card Subtitle'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  9cea8658-ffa6-408f-9e92-c63879c28c05: # Card Title
+    columnSuffix: fqewuueh
+    contentColumnType: text
+    fieldGroup: null
+    handle: cardTitle
+    instructions: null
+    name: 'Card Title'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: card
+name: Card
+sortOrder: 1

@@ -1,0 +1,100 @@
+field: 28a4eafa-ba34-421b-a652-2be50d89d1b5 # Hero Button
+fieldLayouts:
+  d3898be1-59fe-4f5f-ac1b-340cd8e1507c:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 842e16ec-16bc-4574-96ee-3e1a808c7908 # Button Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bf9014c7-7625-437f-b2eb-4ddc15f68db5
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 4da2daf7-d326-4905-ab11-6284e46b3e98 # Button Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: daf88fcd-3486-4a7e-a7e1-30d8938e05f9
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 46b79096-ad3b-4ec8-942a-159e814e65df # Button Target
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b45c8a28-e334-4bf8-b91a-d2e9e38b6cd7
+            userCondition: null
+            warning: null
+            width: 50
+        name: Content
+        uid: 6ca92e1b-f1ee-44c6-aa32-e4ccb481739e
+        userCondition: null
+fields:
+  4da2daf7-d326-4905-ab11-6284e46b3e98: # Button Link
+    columnSuffix: yyggziyl
+    contentColumnType: string(255)
+    fieldGroup: null
+    handle: buttonLink
+    instructions: null
+    name: 'Button Link'
+    searchable: false
+    settings:
+      maxLength: 255
+      types:
+        - url
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+  46b79096-ad3b-4ec8-942a-159e814e65df: # Button Target
+    columnSuffix: tnkqbygg
+    contentColumnType: boolean
+    fieldGroup: null
+    handle: buttonTarget
+    instructions: null
+    name: 'Button Target'
+    searchable: false
+    settings:
+      default: false
+      offLabel: null
+      onLabel: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
+  842e16ec-16bc-4574-96ee-3e1a808c7908: # Button Text
+    columnSuffix: insltymy
+    contentColumnType: text
+    fieldGroup: null
+    handle: buttonText
+    instructions: null
+    name: 'Button Text'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: button
+name: Button
+sortOrder: 1

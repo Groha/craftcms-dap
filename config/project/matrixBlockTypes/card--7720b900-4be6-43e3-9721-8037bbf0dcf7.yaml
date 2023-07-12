@@ -1,0 +1,237 @@
+field: 0850d1bc-7b20-4f2b-82eb-4f90f0ba48a1 # Where To Buy Cards
+fieldLayouts:
+  bcf4ecb4-c18d-4050-abd6-e6a2eee59bf9:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: d7624f55-7d29-4f41-9e64-9e8e958a4b1a # Card Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7081ed79-94d6-4567-94a3-5beae77133ad
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: bd45d741-5caf-4742-a1aa-3d0041b130de # Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 11ab4a57-6fe5-4da7-bf9a-63ed234d899e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 4029b062-41a8-4a89-843d-02c1d5441811 # Range
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d6307696-a06b-44e4-9113-aecd2238a371
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 00f2b784-a146-4c2d-9d63-fe78d88ee06c # Not Available
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7d1e8006-a9a8-40eb-9235-0022bff16d5e
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 83205f88-2086-41af-b674-d22765ea8b8f # Buttons
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fd5e4338-b375-46fe-8956-a349363383bb
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 39d8eb90-aa26-4182-acef-d886676231a2
+        userCondition: null
+fields:
+  00f2b784-a146-4c2d-9d63-fe78d88ee06c: # Not Available
+    columnSuffix: tnrfpcyu
+    contentColumnType: boolean
+    fieldGroup: null
+    handle: notAvailable
+    instructions: null
+    name: 'Not Available'
+    searchable: false
+    settings:
+      default: false
+      offLabel: null
+      onLabel: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
+  4029b062-41a8-4a89-843d-02c1d5441811: # Range
+    columnSuffix: cvtikuia
+    contentColumnType: text
+    fieldGroup: null
+    handle: range
+    instructions: null
+    name: Range
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  83205f88-2086-41af-b674-d22765ea8b8f: # Buttons
+    columnSuffix: rtjrecbd
+    contentColumnType: text
+    fieldGroup: null
+    handle: buttons
+    instructions: null
+    name: Buttons
+    searchable: false
+    settings:
+      addRowLabel: 'Add a row'
+      columnType: text
+      columns:
+        __assoc__:
+          -
+            - col1
+            -
+              __assoc__:
+                -
+                  - heading
+                  - Text
+                -
+                  - handle
+                  - text
+                -
+                  - width
+                  - ''
+                -
+                  - type
+                  - singleline
+          -
+            - col2
+            -
+              __assoc__:
+                -
+                  - heading
+                  - Link
+                -
+                  - handle
+                  - link
+                -
+                  - width
+                  - ''
+                -
+                  - type
+                  - url
+      defaults:
+        -
+          __assoc__:
+            -
+              - col1
+              - ''
+            -
+              - col2
+              - ''
+      maxRows: null
+      minRows: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Table
+  bd45d741-5caf-4742-a1aa-3d0041b130de: # Image
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: image
+    instructions: null
+    name: Image
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds: null
+      branchLimit: null
+      defaultUploadLocationSource: 'volume:9f9aa25f-e3b9-4164-8bef-99d3aec3c774' # Uploads
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: null
+      minRelations: null
+      previewMode: full
+      restrictFiles: false
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:9f9aa25f-e3b9-4164-8bef-99d3aec3c774' # Uploads
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: null
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      sources:
+        - 'volume:9f9aa25f-e3b9-4164-8bef-99d3aec3c774' # Uploads
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  d7624f55-7d29-4f41-9e64-9e8e958a4b1a: # Card Title
+    columnSuffix: zuwvhiph
+    contentColumnType: text
+    fieldGroup: null
+    handle: cardTitle
+    instructions: null
+    name: 'Card Title'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: card
+name: Card
+sortOrder: 1

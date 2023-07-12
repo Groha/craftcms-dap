@@ -1,0 +1,23 @@
+<section class="py-40 md:pt-85 md:pb-[7rem] px-20">
+    <div class="ads-container">
+        <h2 class="h2">{{ entry.howItWorksTitle }}</h2>
+        <p class="text text-red">{{ entry.howItWorksSubtitle }}</p>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-45 mt-32">
+          {% for card in entry.howItWorks.all() %}
+            {% set img = card.cardImage.one() %}
+
+            <div>
+              <div class="mb-26 relative w-full pb-[60%]">
+                <picture>
+                  <img src="{{ img.url }}" alt="{{ img.title }}" class="w-full h-full object-cover absolute" />
+                </picture>
+              </div>
+              <div>
+                {{ card.cardTitle }}
+              </div>
+            </div>
+
+          {% endfor %}
+        </div>
+    </div>
+</section>

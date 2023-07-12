@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>DAP</title>
+        <script defer="defer" src="{{ siteUrl }}src/index.js"></script>
+        <link href="{{ siteUrl }}src/critical.css" rel="stylesheet" />
+        <link href="{{ siteUrl }}src/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <header class="bg-black px-30 py-15 md:py-30 fixed top-0 left-0 right-0 z-50">
+            <div class="ads-container flex flex-wrap justify-between items-center">
+                <a href="{{ siteUrl }}" class="block w-[8.125rem] h-60">
+                    <picture><img src="{{ siteUrl }}src/assets/logo.png" alt="{{ siteName }}" class="w-full h-full object-contain" /></picture>
+                </a>
+                <div class="ads-burger lg:hidden cursor-pointer w-30 h-30 flex justify-center items-center">
+                    <span class="block w-20 h-2 bg-white relative before:block before:w-20 before:h-2 before:bg-white before:absolute before:-bottom-6 after:block after:w-20 after:h-2 after:bg-white after:absolute after:-top-6"></span>
+                </div>
+                <nav class="w-full lg:w-auto mt-20 lg:mt-0 hidden lg:block">
+                    <ul class="flex flex-col lg:flex-row lg:gap-63">
+                      {% for link in header.navLinks %}
+                        
+                        <li class="{{ loop.index == 1 ? 'active' }}">
+                            <a href="{{ link.linkAnchor }}" class="hover:text-red transition-colors text-white leading-[288%] uppercase">{{ link.linkName }}</a>
+                        </li>
+
+                      {% endfor %}
+
+                        <li class="">
+                            <div class="relative group cursor-pointer hover:text-red transition-colors text-white leading-[288%] uppercase flex items-center">
+
+                              {% for button in header.buttonWithList.all() %}
+                                <span class="group-hover:text-red">{{ button.buttonText }}</span>
+                                <svg width="20" height="13" viewBox="0 0 20 13" fill="none" xmlns="http://www.w3.org/2000/svg" class="ml-20">
+                                    <path d="M17.65 0.316749L10 7.95008L2.35 0.316748L-1.03312e-06 2.66675L10 12.6667L20 2.66675L17.65 0.316749Z" fill="white" class="group-hover:fill-red" />
+                                </svg>
+                                <ul class="absolute top-46 left-0 lg:left-[unset] lg:right-0 z-[100] bg-black hidden group-hover:block min-w-[16.25rem] w-full lg:w-auto">
+                                    
+                                  {% for item in button.buttonList %}
+
+                                    <li class="hover:underline">
+                                      <a href="{{ item.link }}" class="text-white uppercase block p-10 leading-none">
+                                        {{ item.text }}
+                                      </a>
+                                    </li>
+
+                                  {% endfor %}
+
+                                </ul>
+
+                              {% endfor %}
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        {% block content %}
+        
+        {% endblock %}
+
+        <footer class="bg-black pt-30 pb-60 px-20">
+            <div class="ads-container">
+                <a href="{{ siteUrl }}" class="block w-[13.125rem] h-90 mx-auto">
+                    <picture>
+                      <img src="{{ siteUrl }}src/assets/logo.png" alt="{{ siteName }}" class="w-full h-full object-contain" />
+                    </picture>
+                </a>
+                <div>{{ footer.richText }}</div>
+            </div>
+        </footer>
+    </body>
+</html>

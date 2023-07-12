@@ -1,0 +1,36 @@
+fieldLayouts:
+  50684390-6a9c-4740-9a03-b2947e2f07ce:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 35cafe66-1d9a-4b4b-afce-f51bde67ace7 # Nav Links
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 54db1375-81ca-4fee-b428-b43f1b56990d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d3573591-9a1e-4248-95a4-ddb3d6b816fa # Button With List
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b6e850e2-a55d-42b1-a2af-5d6642ca3e77
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: bd13680d-916b-4907-b1e9-ab00ac70e3fa
+        userCondition: null
+handle: header
+name: Header
+sortOrder: 1

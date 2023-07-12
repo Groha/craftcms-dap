@@ -1,0 +1,61 @@
+<section id="ads-products" class="gradient py-40 md:pt-[8.125rem] md:pb-[8.438rem] px-20 border-b-[2px] border-red overflow-hidden">
+    <div class="ads-container">
+        <div>{{ entry.whereToBuyTitle }}</div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-45">
+
+          {% for card in entry.whereToBuyCards.all() %}
+
+            {% set img = card.image.one() %}
+            
+            <div class="flex flex-col">
+                <div class="border-[0.5px] border-black w-full pb-[60%] bg-white overflow-hidden relative">
+                    <picture>
+                      <img src="{{ img.url }}" alt="{{ img.title }}" class="w-full h-full object-contain object-center absolute" />
+                    </picture>
+
+                    {% if card.notAvailable %}
+                    
+                      <div class="absolute py-2 bg-red -rotate-[15deg] top-[48%] md:top-[42%] lg:top-[36%] 3xl:top-[43%] -left-[36%] 3xl:-left-[30%]">
+                          <p class="text-white font-Roboto-Bold uppercase text-[1.5rem] bg-red whitespace-nowrap py-5 border-y border-white">COMING SOON! COMING SOON! COMING SOON!</p>
+                      </div>
+
+                    {% endif %}
+
+                </div>
+                <p class="title">{{ card.cardTitle }}</p>
+                <div class="flex flex-grow">
+
+                  {% set range = card.range %}
+                  {% set maxRange = 5 %}
+
+                  {% for i in 1..maxRange %}
+                    {% if i <= range %}
+                      <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-19 h-19">
+                        <path d="M11.75 0.437012L14.388 8.55606H22.9249L16.0184 13.5739L18.6565 21.693L11.75 16.6751L4.84352 21.693L7.48156 13.5739L0.575086 8.55606H9.11196L11.75 0.437012Z" fill="#070707"></path>
+                      </svg>
+                    {% else %}
+                      <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-19 h-19">
+                          <path
+                              d="M9.99997 1.30902L11.8951 7.14159L11.9512 7.31434H12.1329H18.2656L13.3041 10.9191L13.1572 11.0258L13.2133 11.1986L15.1084 17.0312L10.1469 13.4264L9.99997 13.3197L9.85302 13.4264L4.89154 17.0312L6.78666 11.1986L6.84278 11.0258L6.69584 10.9191L1.73435 7.31434H7.86709H8.04872L8.10485 7.14159L9.99997 1.30902Z"
+                              fill="#D9D9D9"
+                              stroke="#A0A0A0"
+                              stroke-width="0.5"
+                          />
+                      </svg>
+                    {% endif %}
+                  {% endfor %}
+
+                </div>
+                <div class="mt-22 text-center md:text-left">
+
+                  {% for button in card.buttons %}
+                    <a href="{{ button.link }}" class="btn {{ loop.index is even ? '--black ml-33 lg:ml-0 xl:ml-33 lg:mt-20 xl:mt-0' }}">{{ button.text }}</a>
+                  {% endfor %}
+                  
+                </div>
+            </div>
+
+          {% endfor %}
+        </div>
+    </div>
+</section>

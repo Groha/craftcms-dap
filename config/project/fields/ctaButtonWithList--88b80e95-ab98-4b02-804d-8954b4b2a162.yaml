@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: b364056e-da9f-417e-9f54-22d874607fb7 # Common
+handle: ctaButtonWithList
+instructions: null
+name: 'CTA Button With List'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_ctabuttonwithlist}}'
+  maxBlocks: null
+  minBlocks: null
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

@@ -1,0 +1,36 @@
+<section class="py-40 md:pt-[8.25rem] md:pb-93 px-20">
+    <div class="ads-container">
+        <h2 class="h2 big mb-40 md:mb-75">{{ entry.tipsTitle }}</h2>
+        <div class="grid md:grid-cols-2 gap-x-50 gap-y-30 md:gap-y-0 lg:gap-x-[6.875rem]">
+
+          {% for lists in entry.tipsLists.all() %}
+            
+            <ul>
+              {% for list in lists.leftList %}
+                
+                <li class="text flex mb-30 md:mb-50 lg:mb-58">
+                    <svg class="mr-42 mt-4 flex-shrink-0 w-19 h-19" width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11.75 0.437012L14.388 8.55606H22.9249L16.0184 13.5739L18.6565 21.693L11.75 16.6751L4.84352 21.693L7.48156 13.5739L0.575086 8.55606H9.11196L11.75 0.437012Z" fill="#EE4021" />
+                    </svg>
+                    {{ list.itemName }}
+                </li>
+
+              {% endfor %}
+            </ul>
+            <ul>
+              {% for list in lists.rightList %}
+
+                <li class="text flex mb-30 md:mb-50 lg:mb-79">
+                    <svg class="mr-42 mt-4 flex-shrink-0 w-19 h-19" width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11.75 0.437012L14.388 8.55606H22.9249L16.0184 13.5739L18.6565 21.693L11.75 16.6751L4.84352 21.693L7.48156 13.5739L0.575086 8.55606H9.11196L11.75 0.437012Z" fill="#EE4021" />
+                    </svg>
+                    {{ list.itemName }}
+                </li>
+
+              {% endfor %}
+            </ul>
+
+          {% endfor %}
+        </div>
+    </div>
+</section>

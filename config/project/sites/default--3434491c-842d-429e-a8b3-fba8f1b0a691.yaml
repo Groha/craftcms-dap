@@ -1,0 +1,8 @@
+baseUrl: $PRIMARY_SITE_URL
+handle: default
+hasUrls: true
+language: en-US
+name: DAP
+primary: true
+siteGroup: 29a01358-55dd-4dce-b12d-2d544f323245 # DAP
+sortOrder: 1

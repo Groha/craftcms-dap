@@ -1,0 +1,19 @@
+columnSuffix: qhvhistt
+contentColumnType: text
+fieldGroup: 1cb33589-c021-4184-8b3d-a7d14847b35f # Home page
+handle: reviewsTitle
+instructions: null
+name: 'Reviews Title'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

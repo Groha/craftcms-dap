@@ -1,0 +1,23 @@
+{% for button in buttons %}  
+  <div class="flex w-fit {{ buttonColor == 'red' ? 'bg-red' : 'bg-black mx-auto md:mx-0 relative' }} rounded-[0.188rem] hover:bg-opacity-80 transition-colors cursor-pointer group">
+    <span class="py-20 px-40 uppercase p-10 font-Roboto-Medium text-[1.25rem] leading-none text-white group-hover:bg-opacity-80">{{ button.buttonText }}</span>
+    <span class="p-20 flex justify-center items-center border-l border-{{ buttonColor == 'red' ? 'black' : 'white' }}">
+        <svg width="20" height="13" viewBox="0 0 20 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.65 0.316749L10 7.95008L2.35 0.316748L-1.03312e-06 2.66675L10 12.6667L20 2.66675L17.65 0.316749Z" fill="{{ buttonColor == 'red' ? 'black' : 'white' }}" />
+        </svg>
+    </span>
+    <ul class="absolute z-[100] top-60 bg-{{ buttonColor }} bg-opacity-80 w-[17.844rem] rounded-b-[0.188rem] hidden group-hover:block">
+    
+      {% for item in button.buttonList %}
+
+        <li class="hover:underline">
+          <a href="{{ item.link }}" class="text-white uppercase block p-10 leading-none">
+            {{ item.text }}
+          </a>
+        </li>
+
+      {% endfor %}
+
+    </ul>
+  </div>
+{% endfor %}

@@ -1,0 +1,86 @@
+<section class="border-b-[3px] mb-16 px-20 relative border-red after:block after:w-full after:h-16 after:bg-black after:absolute after:-bottom-19 after:left-0 after:right-0">
+    <div class="ads-container flex flex-col lg:flex-row justify-between items-center">
+        <div class="flex flex-shrink-0 order-2 lg:order-1 mt-30 lg:mt-0 lg:max-w-[30rem] xl:max-w-[unset] lg:mr-30">
+
+          {% for content in entry.heroLeftContent.all() %}
+
+            {% set bgImage = content.backgroundImage.one() %}
+            {% set productImg = content.productImage.one() %}
+            {% set titleImg = content.titleImage.one() %}
+            
+            <div class="px-10 lg:px-21 py-50 lg:pt-[14.375rem] xl:pt-[10.625rem] lg:pb-[13.125rem] xl:pb-[8.313rem] relative border-r border-black last:border-0">
+                <div class="relative z-[2]">
+                    <picture><img src="{{ titleImg.url }}" alt="{{ titleImg.title }}" class="w-99 h-46 object-contain" /></picture>
+                </div>
+                <p class="text-[0.625rem] xl:text-[0.75rem] font-Roboto-BlackItalic text-center mt-7 relative z-[2]">
+                  {{ content.titleSubtext }}
+                </p>
+                <div class="relative z-[2] {{ loop.index == 3 or loop.index == 4 ? 'mt-23 md:mt-59' : 'md:mt-33' }}">
+                  <picture>
+                    <img src="{{ productImg.url }}" alt="{{ productImg.url }}" class="w-99 h-[23.75rem] object-contain" />
+                  </picture>
+                </div>
+                <div class="flex justify-center mt-30 relative z-[2]">
+
+                  {% set starCount = content.starNumbers %}
+                  
+                  {% for _ in (1..starCount) %}
+
+                    <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-19 h-19">
+                        <path d="M11.75 0.437012L14.388 8.55606H22.9249L16.0184 13.5739L18.6565 21.693L11.75 16.6751L4.84352 21.693L7.48156 13.5739L0.575086 8.55606H9.11196L11.75 0.437012Z" fill="#000" />
+                    </svg>
+
+                  {% endfor %}
+                </div>
+                <picture>
+                  <img src="{{ bgImage.url }}" alt="{{ bgImage.title }}" class="w-full h-full object-cover absolute top-0 left-0" />
+                </picture>
+            </div>
+
+          {% endfor %}
+
+        </div>
+        <div class="order-1 lg:order-2 lg:my-60 xl:my-0">
+
+          {% for content in entry.heroRightContent.all() %}
+            
+            <div class="flex items-center gap-x-20">
+              {% for logo in entry.content %}
+
+                <picture>
+                  <img src="{{ logo.url }}" alt="{{ logo.title }}" />
+                </picture>
+                
+              {% endfor %}
+            </div>
+            
+            <div class="max-w-[38.75rem] mt-40">
+                {{ content.heroTitle }}
+                <p class="text-[1.75rem] leading-[114%] mt-10"> {{ content.heroSubtitle }} </p>
+                <div class="mt-60 flex flex-wrap xl:flex-nowrap justify-center lg:justify-start relative">
+
+                  {% include 'components/partials/_button-with-list.twig' 
+                    with { 
+                      buttons: entry.buttonWithList.all(),
+                      buttonColor: 'red',
+                    } 
+                  %}
+
+                  {% for button in entry.heroButton %}
+
+                    <a href="{{ button.buttonLink }}" class="mt-30 md:mt-0 lg:mt-30 xl:mt-0 md:ml-40 lg:ml-0 xl:ml-40 btn --big --gray" target="{{ button.buttonTarget ? '_blank' : '' }}">
+                      {{ button.buttonText }}
+                    </a>
+
+                  {% endfor %}
+
+                </div>
+            </div>
+
+          {% endfor %}
+        </div>
+        <span class="absolute right-30 md:right-0 md:left-[34.875rem] lg:left-[44.875rem] bottom-14 text-[0.75rem] uppercase">
+          {{ entry.heroFootnote }}
+        </span>
+    </div>
+</section>

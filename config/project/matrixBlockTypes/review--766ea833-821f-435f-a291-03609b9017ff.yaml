@@ -1,0 +1,268 @@
+field: ab988ae2-4fa9-4430-a94f-b6abdb03fb47 # Reviews 
+fieldLayouts:
+  5ab28d92-b6b7-4342-b7f3-caca107b9588:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: be3c2f99-80a1-4abb-ba87-7a0b9c4028a3 # Grade
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c513526c-ff2e-47ee-b0be-99d19cb81785
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: c8ebc3cc-b7de-40bc-804c-33badd480ba6 # Product Img
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 13d6a97c-81bc-48cb-9046-db6d15921d62
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: aff50625-677e-4741-9e30-44cf3cec029e # Button Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3106c2d6-8c7c-483a-b495-490953169150
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 94f06e67-ce06-45c1-8c0e-e8805e5195f6 # Button Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4c5b4d33-abb9-4100-97f7-5c092b763fa6
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: eb01c3b6-9167-4b17-94f1-529adbdca2ca # Product Name
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: aca15644-2b4b-4ebd-a09a-5df918edf3e0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 41b11d35-3dbb-41bb-b9c5-37b8832ac167 # Product Review
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d3ed8329-84a8-4fca-8026-493fe2b94c3d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 06cac6bf-1516-464c-aa72-075c7a4f822e # Author
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7e9f2b8e-3357-4629-a87d-0d023b5c6d41
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 262a1031-2547-4041-a877-9118b33944c1
+        userCondition: null
+fields:
+  06cac6bf-1516-464c-aa72-075c7a4f822e: # Author
+    columnSuffix: hneojnnv
+    contentColumnType: text
+    fieldGroup: null
+    handle: author
+    instructions: null
+    name: Author
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  41b11d35-3dbb-41bb-b9c5-37b8832ac167: # Product Review
+    columnSuffix: nklfeqlf
+    contentColumnType: text
+    fieldGroup: null
+    handle: productReview
+    instructions: null
+    name: 'Product Review'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  94f06e67-ce06-45c1-8c0e-e8805e5195f6: # Button Link
+    columnSuffix: vlhywlmi
+    contentColumnType: text
+    fieldGroup: null
+    handle: buttonLink
+    instructions: null
+    name: 'Button Link'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  aff50625-677e-4741-9e30-44cf3cec029e: # Button Text
+    columnSuffix: dhxphmgq
+    contentColumnType: text
+    fieldGroup: null
+    handle: buttonText
+    instructions: null
+    name: 'Button Text'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  be3c2f99-80a1-4abb-ba87-7a0b9c4028a3: # Grade
+    columnSuffix: tdqpeptw
+    contentColumnType: smallint(1)
+    fieldGroup: null
+    handle: grade
+    instructions: null
+    name: Grade
+    searchable: false
+    settings:
+      decimals: 0
+      defaultValue: 4
+      max: 5
+      min: 1
+      prefix: null
+      previewCurrency: null
+      previewFormat: none
+      size: null
+      suffix: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Number
+  c8ebc3cc-b7de-40bc-804c-33badd480ba6: # Product Img
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: productImg
+    instructions: null
+    name: 'Product Img'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds: null
+      branchLimit: null
+      defaultUploadLocationSource: 'volume:9f9aa25f-e3b9-4164-8bef-99d3aec3c774' # Uploads
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: null
+      minRelations: null
+      previewMode: full
+      restrictFiles: false
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:9f9aa25f-e3b9-4164-8bef-99d3aec3c774' # Uploads
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: null
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      sources:
+        - 'volume:9f9aa25f-e3b9-4164-8bef-99d3aec3c774' # Uploads
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  eb01c3b6-9167-4b17-94f1-529adbdca2ca: # Product Name
+    columnSuffix: xfoyivta
+    contentColumnType: text
+    fieldGroup: null
+    handle: productName
+    instructions: null
+    name: 'Product Name'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: review
+name: Review
+sortOrder: 1

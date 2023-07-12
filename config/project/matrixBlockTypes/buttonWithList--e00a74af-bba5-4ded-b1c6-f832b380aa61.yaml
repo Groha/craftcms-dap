@@ -1,0 +1,117 @@
+field: 88b80e95-ab98-4b02-804d-8954b4b2a162 # CTA Button With List
+fieldLayouts:
+  3f4e0b4a-10f5-43ba-81df-d65ac2795c3d:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 9e3eb318-60e7-40cf-9bd7-f01e5e79b6ed # Button Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f1380e81-20b2-42ae-9458-a87e4946fdb7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 459972b2-8a11-4295-a47d-17a013173d3c # Button List
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 14859159-3996-4e1f-b258-2025ce470772
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: fce9cf84-347a-4887-b0ea-0e66885b7157
+        userCondition: null
+fields:
+  9e3eb318-60e7-40cf-9bd7-f01e5e79b6ed: # Button Text
+    columnSuffix: uijmxiad
+    contentColumnType: text
+    fieldGroup: null
+    handle: buttonText
+    instructions: null
+    name: 'Button Text'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  459972b2-8a11-4295-a47d-17a013173d3c: # Button List
+    columnSuffix: iwvavqrj
+    contentColumnType: text
+    fieldGroup: null
+    handle: buttonList
+    instructions: null
+    name: 'Button List'
+    searchable: false
+    settings:
+      addRowLabel: 'Add a row'
+      columnType: text
+      columns:
+        __assoc__:
+          -
+            - col1
+            -
+              __assoc__:
+                -
+                  - heading
+                  - Text
+                -
+                  - handle
+                  - text
+                -
+                  - width
+                  - ''
+                -
+                  - type
+                  - singleline
+          -
+            - col2
+            -
+              __assoc__:
+                -
+                  - heading
+                  - Link
+                -
+                  - handle
+                  - link
+                -
+                  - width
+                  - ''
+                -
+                  - type
+                  - url
+      defaults:
+        -
+          __assoc__:
+            -
+              - col1
+              - ''
+            -
+              - col2
+              - ''
+      maxRows: null
+      minRows: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Table
+handle: buttonWithList
+name: 'Button With List'
+sortOrder: 1

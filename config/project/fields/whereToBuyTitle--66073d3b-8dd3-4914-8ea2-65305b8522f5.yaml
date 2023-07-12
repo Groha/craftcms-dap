@@ -1,0 +1,27 @@
+columnSuffix: zkfwgehz
+contentColumnType: text
+fieldGroup: 1cb33589-c021-4184-8b3d-a7d14847b35f # Home page
+handle: whereToBuyTitle
+instructions: null
+name: 'Where To Buy Title'
+searchable: false
+settings:
+  availableTransforms: ''
+  availableVolumes: '*'
+  columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: null
+  purifyHtml: true
+  redactorConfig: null
+  removeEmptyTags: false
+  removeInlineStyles: false
+  removeNbsp: false
+  showHtmlButtonForNonAdmins: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\redactor\Field

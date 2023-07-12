@@ -1,0 +1,147 @@
+field: 6f13e6ec-b3c6-443f-b38c-233885101b8b # Hero Right Content
+fieldLayouts:
+  1fa225a9-b1bc-49b9-889b-9644c08b097f:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 0c4ba1b6-7a32-4e6e-b297-73be6cd5a712 # Hero Logos
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: cf3b6132-4a2a-4f39-961f-9524fc365c70
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5b1223b7-2a14-4722-9e49-31250956edb4 # Hero Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 49be5578-5dc2-47c7-a31c-9be631a14f9e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 4092ca72-5467-4c1d-bdd2-5c2ec2075e20 # Hero Subtitle
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b899235e-a176-434e-bd0c-611e8d7ad176
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: a434d50f-58ae-400c-b7dd-fb40b6698e2f
+        userCondition: null
+fields:
+  0c4ba1b6-7a32-4e6e-b297-73be6cd5a712: # Hero Logos
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: heroLogos
+    instructions: null
+    name: 'Hero Logos'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds: null
+      branchLimit: null
+      defaultUploadLocationSource: 'volume:9f9aa25f-e3b9-4164-8bef-99d3aec3c774' # Uploads
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: null
+      minRelations: null
+      previewMode: full
+      restrictFiles: false
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:9f9aa25f-e3b9-4164-8bef-99d3aec3c774' # Uploads
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: null
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      sources:
+        - 'volume:9f9aa25f-e3b9-4164-8bef-99d3aec3c774' # Uploads
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  5b1223b7-2a14-4722-9e49-31250956edb4: # Hero Title
+    columnSuffix: chrvghmw
+    contentColumnType: text
+    fieldGroup: null
+    handle: heroTitle
+    instructions: null
+    name: 'Hero Title'
+    searchable: false
+    settings:
+      availableTransforms: ''
+      availableVolumes: '*'
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: null
+      purifyHtml: true
+      redactorConfig: null
+      removeEmptyTags: false
+      removeInlineStyles: false
+      removeNbsp: false
+      showHtmlButtonForNonAdmins: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  4092ca72-5467-4c1d-bdd2-5c2ec2075e20: # Hero Subtitle
+    columnSuffix: limsxhsb
+    contentColumnType: text
+    fieldGroup: null
+    handle: heroSubtitle
+    instructions: null
+    name: 'Hero Subtitle'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: heroRightBlock
+name: 'Hero Right Block'
+sortOrder: 1

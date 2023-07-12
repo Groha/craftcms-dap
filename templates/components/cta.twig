@@ -1,0 +1,27 @@
+<section class="mb-50 relative before:absolute before:-top-36 before:right-0 before:block before:w-[12%] before:h-18 before:bg-red after:absolute after:bottom-25 after:right-0 after:block after:w-[32%] md:after:w-[20%] 3xl:after:w-[32%] after:h-18 after:bg-white">
+    <div class="mt-100 lg:mb-[8.75rem] bg-red">
+        <div class="ads-container relative flex flex-col">
+            <div class="lg:max-w-[32.75rem] xl:max-w-[43.75rem] ml-auto pb-[9rem] md:pb-[6.625rem] lg:pt-[6.625rem] order-2 lg:order-1 md:-translate-y-[10%] lg:translate-y-0 px-20 lg:px-0">
+                <p class="text-[3.875rem] text-white uppercase leading-none mb-60">{{ entry.ctaTitle }}</p>
+
+                {% include 'components/partials/_button-with-list.twig' 
+                  with { 
+                    buttons: entry.ctaButtonWithList.all(),
+                    buttonColor: 'black',
+                  } 
+                %}
+
+            </div>
+            <div class="lg:absolute lg:left-0 lg:-top-[8.125rem] flex order-1 lg:order-2 justify-center -translate-y-[25%] lg:translate-y-0">
+
+              {% set images = entry.ctaImages.all() %}
+              {% for image in images %}
+                <picture>
+                  <img src="{{ image.url }}" alt="{{ image.title }}" class="w-[5rem] md:w-[7rem] xl:w-[10.625rem] h-[20rem] md:h-[30rem] xl:h-[41.625rem] object-contain" />
+                </picture>
+              {% endfor %}
+
+            </div>
+        </div>
+    </div>
+</section>

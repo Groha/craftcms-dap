@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 1cb33589-c021-4184-8b3d-a7d14847b35f # Home page
+handle: tipsLists
+instructions: null
+name: 'Tips Lists'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_tipslists}}'
+  maxBlocks: null
+  minBlocks: null
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

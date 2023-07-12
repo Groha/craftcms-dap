@@ -1,0 +1,50 @@
+<section id="ads-hero" class="pt-40 md:pt-[9.063rem] px-20 border-t-[3px] border-red">
+    <div class="ads-container grid lg:grid-cols-2 gap-40 md:gap-93">
+        {% for content in entry.videoBlock.all() %}
+
+          {% set video = content.video.one() %}
+          {% set img = content.preloadImage.one() %}
+
+          <div class="w-full pb-[63%] relative trapezoid video">
+            <video src="{{ video.url }}" controls class="w-full h-full object-cover absolute"></video>
+            <svg width="60" height="67" viewBox="0 0 60 67" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] cursor-pointer play-video z-[5]">
+                <path
+                    d="M58.8713 31.6385C60.2383 32.4015 60.2383 34.3682 58.8713 35.1312L3.47475 66.0525C2.14163 66.7966 0.499966 65.8329 0.499966 64.3061L0.499969 2.46361C0.499969 0.936874 2.14163 -0.02687 3.47475 0.717253L58.8713 31.6385Z"
+                    fill="white"
+                />
+            </svg>
+            <div class="absolute w-full h-full inset-0">
+                <picture>
+                  <img src="{{ img.url }}" alt="{{ img.title }}" class="w-full h-full object-cover" />
+                </picture>
+            </div>
+          </div>
+          
+        {% endfor %}
+
+        {% for item in entry.videoListBlock.all() %}
+          
+          <div>
+            <h2 class="h2 text-[2.25rem]">{{ item.listTitle }}</h2>
+            <ul class="mt-36">
+              {% for listItem in item.listItems %}
+                
+                <li class="text mb-34 last:mb-0 flex items-center">
+                  <p class="rounded-full border-[3px] border-red w-36 h-36 bg-gray-2 flex justify-center items-center flex-shrink-0 mr-36">
+                    <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-16 h-13">
+                      <path
+                        d="M19.1309 0.470703H16.8408C16.3428 0.470703 15.8692 0.70996 15.5762 1.12012L7.9004 11.7646L4.42384 6.94043C4.13087 6.53516 3.66212 6.29102 3.15919 6.29102H0.869149C0.551766 6.29102 0.366219 6.65234 0.551766 6.91113L6.63575 15.3486C6.77948 15.5492 6.96895 15.7127 7.18845 15.8255C7.40796 15.9382 7.65118 15.997 7.89796 15.997C8.14473 15.997 8.38796 15.9382 8.60746 15.8255C8.82697 15.7127 9.01644 15.5492 9.16016 15.3486L19.4434 1.09082C19.6338 0.832032 19.4483 0.470703 19.1309 0.470703Z"
+                        fill="black"
+                      />
+                    </svg>
+                  </p>
+                  {{ listItem.text }}
+                </li>
+
+              {% endfor %}
+            </ul>
+          </div>
+
+        {% endfor %}
+    </div>
+</section>
